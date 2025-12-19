@@ -8,8 +8,8 @@
 ```
 **Solução**: Baixe o modelo Vosk para o diretório `./model`:
 ```bash
-wget https://alphacephei.com/vosk/models/vosk-model-pt-br-v1.zip
-unzip vosk-model-pt-br-v1.zip -d model/
+wget https://alphacephei.com/vosk/models/vosk-model-small-pt-0.3.zip
+unzip vosk-model-small-pt-0.3.zip
 ```
 
 ### 2. Erro: "Ollama connection refused"
@@ -18,7 +18,7 @@ ConnectionRefusedError: [Errno 111] Connection refused
 ```
 **Solução**: Inicie o Ollama:
 ```bash
-ollama serve  # Ou via Docker
+ollama serve
 ```
 
 ### 3. Erro: "Sensor DHT22 não responde"
