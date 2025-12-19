@@ -7,7 +7,7 @@ O vídeo de apresentação do projeto se encontra no link:
 </a>
 https://www.youtube.com/watch?v=dKtQXxFgpXw
 
-![Image](https://github.com/user-attachments/assets/)
+![Image](https://github.com/ricardomdcj/IESTI05-Projeto-DELTA/blob/de3122edee0d421e0808a5707cc6effb843f7a79/delta.png)
 
 ## Visão Geral
 
@@ -16,11 +16,17 @@ https://www.youtube.com/watch?v=dKtQXxFgpXw
 ### Características Principais
 
 -**Reconhecimento de voz offline** via Vosk (sem dependência de internet)
+
 -**Processamento de IA em edge** com Ollama (modelos pequenos e rápidos)
+
 -**Controle de dispositivos Tuya** (AR, ventilador, lâmpadas RGB)
+
 -**Monitoramento ambiental** com múltiplos sensores (DHT22, AHT20, BMP280)
+
 -**LED RGB indicador de estado** do sistema
+
 -**Métricas de latência** para análise de desempenho
+
 -**Feedback visual** em tempo real
 
 ---
@@ -382,13 +388,6 @@ LATENCIA TOTAL (keyword -> resposta):   4872.1 ms
 Tempo total: 4.87 segundos
 ======================================================================
 ```
-
----
-
-## Requisitos de Infraestrutura Recomendada
-
-- Raspberry Pi 5 com 8GB RAM
-- Conexão de rede estável (2.4GHz ou 5GHz)
 
 ---
 
