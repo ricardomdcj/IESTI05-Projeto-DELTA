@@ -8,7 +8,7 @@ O vídeo de apresentação do projeto se encontra no link:
 https://www.youtube.com/watch?v=dKtQXxFgpXw
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/ricardomdcj/IESTI05-Projeto-DELTA/de3122edee0d421e0808a5707cc6effb843f7a79/delta.png" width="60%" alt="Logo Delta Centralizada">
+  <img src="https://raw.githubusercontent.com/ricardomdcj/IESTI05-Projeto-DELTA/de3122edee0d421e0808a5707cc6effb843f7a79/delta.png" width="30%" alt="Logo Delta Centralizada">
 </div>
 
 ## Visão Geral
