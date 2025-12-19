@@ -1,0 +1,38 @@
+# DELTA System - Python Dependencies
+# Sistema de Automação Residencial com IA em Edge
+
+# ====== RECONHECIMENTO DE VOZ ======
+vosk==0.3.32
+
+# ====== PROCESSAMENTO DE LINGUAGEM NATURAL ======
+# Nota: Ollama é executado via CLI, não via pip
+# pip install ollama
+
+# ====== PROCESSAMENTO DE ÁUDIO ======
+pyaudio==0.2.13
+numpy==1.24.3
+
+# ====== HARDWARE - GPIO E INTERFACES ======
+RPi.GPIO==0.7.0
+gpiozero==2.0.1
+
+# ====== SENSORES - CIRCUITPYTHON ADAFRUIT ======
+adafruit-circuitpython-dht==3.7.10
+adafruit-circuitpython-ahtx0==1.0.15
+adafruit-circuitpython-bmp280==3.9.4
+adafruit-circuitpython-busio==5.2.6
+adafruit-blinka==8.45.0
+
+# ====== CONTROLE DE DISPOSITIVOS TUYA ======
+tinytuya==1.12.7
+
+# ====== UTILITÁRIOS E SUPORTE ======
+# Já inclusos no Python 3.8+, listados apenas para referência:
+# json - processamento JSON
+# time - operações de tempo
+# os - operações do sistema operacional
+# sys - variáveis e funções específicas do sistema
+# threading - processamento multi-thread
+# colorsys - conversão de cores HSV/RGB
+# ctypes - interação com bibliotecas C
+

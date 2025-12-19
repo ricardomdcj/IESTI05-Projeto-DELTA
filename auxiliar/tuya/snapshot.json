@@ -1,0 +1,150 @@
+{
+    "timestamp": 1765056887.0998425,
+    "devices": [
+        {
+            "id": "id here",
+            "ip": "ip here",
+            "uuid": "uuid_here",
+            "active": 2,
+            "encrypt": true,
+            "productKey": "product_key_here",
+            "token": true,
+            "wf_cfg": true,
+            "sl": 0,
+            "clientLink": 3,
+            "name": "Breaker",
+            "key": "key here",
+            "mac": "mac_here",
+            "ability": 0,
+            "dev_type": "default",
+            "err": "",
+            "type": "default",
+            "dps": {
+                "dps": {
+                    "1": 2110,
+                    "9": 0,
+                    "11": false,
+                    "13": 0,
+                    "15": 0,
+                    "16": true,
+                    "19": "1234",
+                    "104": 890,
+                    "105": 600,
+                    "116": 2184,
+                    "117": 1590,
+                    "118": 309
+                }
+            },
+            "origin": "broadcast",
+            "ver": "3.5"
+        },
+        {
+            "id": "id here",
+            "ip": "ip here",
+            "active": 2,
+            "encrypt": true,
+            "productKey": "product_key_here",
+            "name": "Smart air conditioner",
+            "key": "key here",
+            "mac": "mac_here",
+            "ability": 0,
+            "token": "",
+            "wf_cfg": "",
+            "dev_type": "default",
+            "err": "",
+            "type": "default",
+            "dps": {
+                "dps": {
+                    "1": true,
+                    "2": 250,
+                    "3": 250,
+                    "4": "cold",
+                    "5": "mute",
+                    "8": true,
+                    "12": false,
+                    "13": true,
+                    "14": false,
+                    "19": "C",
+                    "28": 0,
+                    "33": false,
+                    "102": false,
+                    "103": false,
+                    "104": false,
+                    "105": false,
+                    "106": false,
+                    "107": 0,
+                    "108": 6,
+                    "109": false,
+                    "110": false,
+                    "111": 0,
+                    "112": 0,
+                    "114": false
+                }
+            },
+            "origin": "broadcast",
+            "ver": "3.3"
+        },
+        {
+            "id": "id here",
+            "ip": "ip here",
+            "uuid": "uuid_here",
+            "active": 2,
+            "encrypt": true,
+            "productKey": "product_key_here",
+            "token": true,
+            "wf_cfg": true,
+            "clientLink": 3,
+            "name": "L\u00e2mpada",
+            "key": "key here",
+            "mac": "mac_here",
+            "ability": 0,
+            "dev_type": "default",
+            "err": "",
+            "type": "default",
+            "dps": {
+                "dps": {
+                    "20": true,
+                    "21": "white",
+                    "22": 1000,
+                    "23": 1000,
+                    "24": "0000000003e8",
+                    "25": "000e0d0000000000000000c80000",
+                    "26": 0,
+                    "34": true,
+                    "41": true
+                }
+            },
+            "origin": "broadcast",
+            "ver": "3.5"
+        },
+        {
+            "id": "id here",
+            "ip": "ip here",
+            "active": 2,
+            "encrypt": true,
+            "productKey": "product_key_here",
+            "token": true,
+            "wf_cfg": true,
+            "name": "interruptor do ventilador com l\u00e2mpada",
+            "key": "key here",
+            "mac": "mac_here",
+            "ability": 0,
+            "dev_type": "default",
+            "err": "",
+            "type": "default",
+            "dps": {
+                "dps": {
+                    "1": false,
+                    "2": 0,
+                    "3": "level_1",
+                    "5": true,
+                    "7": 0,
+                    "11": "on",
+                    "13": true
+                }
+            },
+            "origin": "broadcast",
+            "ver": "3.4"
+        }
+    ]
+}

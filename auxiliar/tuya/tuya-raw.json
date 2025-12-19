@@ -1,0 +1,927 @@
+{
+    "result": [
+        {
+            "active_time": 1761687617,
+            "biz_type": 18,
+            "category": "dj",
+            "create_time": 1761687617,
+            "icon": "smart/icon/ay1555070288771Se8MY/12312069855841cb116e32a21bb9f762.png",
+            "id": "id here",
+            "ip": "ip here",
+            "lat": "-22.43",
+            "local_key": "key here",
+            "lon": "-45.5",
+            "model": "HIE27QF",
+            "name": "L\u00e2mpada",
+            "online": true,
+            "owner_id": "222540427",
+            "product_id": "bx8y0rbp7oyia5li",
+            "product_name": "L\u00e2mpada Inteligente",
+            "status": [
+                {
+                    "code": "switch_led",
+                    "value": true
+                },
+                {
+                    "code": "work_mode",
+                    "value": "white"
+                },
+                {
+                    "code": "bright_value_v2",
+                    "value": 1000
+                },
+                {
+                    "code": "temp_value_v2",
+                    "value": 1000
+                },
+                {
+                    "code": "colour_data_v2",
+                    "value": "{\"h\":0,\"s\":0,\"v\":1000}"
+                },
+                {
+                    "code": "scene_data_v2",
+                    "value": "{\"scene_num\":1,\"scene_units\":[{\"bright\":200,\"h\":0,\"s\":0,\"temperature\":0,\"unit_change_mode\":\"static\",\"unit_gradient_duration\":13,\"unit_switch_duration\":14,\"v\":0}]}"
+                },
+                {
+                    "code": "countdown_1",
+                    "value": 0
+                },
+                {
+                    "code": "music_data",
+                    "value": ""
+                },
+                {
+                    "code": "control_data",
+                    "value": ""
+                },
+                {
+                    "code": "rhythm_mode",
+                    "value": "AAAAAAA="
+                },
+                {
+                    "code": "sleep_mode",
+                    "value": "AAA="
+                },
+                {
+                    "code": "wakeup_mode",
+                    "value": "AAA="
+                },
+                {
+                    "code": "power_memory",
+                    "value": "AAEAAAAAA+gD6APo"
+                },
+                {
+                    "code": "do_not_disturb",
+                    "value": true
+                },
+                {
+                    "code": "remote_switch",
+                    "value": true
+                },
+                {
+                    "code": "cycle_timing",
+                    "value": "AAAA"
+                },
+                {
+                    "code": "random_timing",
+                    "value": "AAAA"
+                }
+            ],
+            "sub": false,
+            "time_zone": "-03:00",
+            "uid": "az1732387940725vAmNN",
+            "update_time": 1765055823,
+            "uuid": "940f7c2e32dddf9f",
+            "mapping": {
+                "20": {
+                    "code": "switch_led",
+                    "type": "Boolean",
+                    "values": {}
+                },
+                "21": {
+                    "code": "work_mode",
+                    "type": "Enum",
+                    "values": {
+                        "range": [
+                            "white",
+                            "colour",
+                            "scene",
+                            "music"
+                        ]
+                    }
+                },
+                "22": {
+                    "code": "bright_value_v2",
+                    "type": "Integer",
+                    "values": {
+                        "min": 10,
+                        "max": 1000,
+                        "scale": 0,
+                        "step": 1
+                    }
+                },
+                "23": {
+                    "code": "temp_value_v2",
+                    "type": "Integer",
+                    "values": {
+                        "min": 0,
+                        "max": 1000,
+                        "scale": 0,
+                        "step": 1
+                    }
+                },
+                "24": {
+                    "code": "colour_data_v2",
+                    "type": "Json",
+                    "raw_values": "{\"h\":{\"min\":0,\"scale\":0,\"unit\":\"\",\"max\":360,\"step\":1},\"s\":{\"min\":0,\"scale\":0,\"unit\":\"\",\"max\":1000,\"step\":1},\"v\":{\"min\":0,\"scale\":0,\"unit\":\"\",\"max\":1000,\"step\":1}}",
+                    "values": {
+                        "h": {
+                            "min": 0,
+                            "scale": 0,
+                            "unit": "",
+                            "max": 360,
+                            "step": 1
+                        },
+                        "s": {
+                            "min": 0,
+                            "scale": 0,
+                            "unit": "",
+                            "max": 1000,
+                            "step": 1
+                        },
+                        "v": {
+                            "min": 0,
+                            "scale": 0,
+                            "unit": "",
+                            "max": 1000,
+                            "step": 1
+                        }
+                    }
+                },
+                "25": {
+                    "code": "scene_data_v2",
+                    "type": "Json",
+                    "raw_values": "{\"scene_num\":{\"min\":1,\"scale\":0,\"max\":8,\"step\":1},\"scene_units\": {\"unit_change_mode\":{\"range\":[\"static\",\"jump\",\"gradient\"]},\"unit_switch_duration\":{\"min\":0,\"scale\":0,\"max\":100,\"step\":1},\"unit_gradient_duration\":{\"min\":0,\"scale\":0,\"max\":100,\"step\":1},\"bright\":{\"min\":0,\"scale\":0,\"max\":1000,\"step\":1},\"temperature\":{\"min\":0,\"scale\":0,\"max\":1000,\"step\":1},\"h\":{\"min\":0,\"scale\":0,\"unit\":\"\",\"max\":360,\"step\":1},\"s\":{\"min\":0,\"scale\":0,\"unit\":\"\",\"max\":1000,\"step\":1},\"v\":{\"min\":0,\"scale\":0,\"unit\":\"\",\"max\":1000,\"step\":1}}}",
+                    "values": {
+                        "scene_num": {
+                            "min": 1,
+                            "scale": 0,
+                            "max": 8,
+                            "step": 1
+                        },
+                        "scene_units": {
+                            "unit_change_mode": {
+                                "range": [
+                                    "static",
+                                    "jump",
+                                    "gradient"
+                                ]
+                            },
+                            "unit_switch_duration": {
+                                "min": 0,
+                                "scale": 0,
+                                "max": 100,
+                                "step": 1
+                            },
+                            "unit_gradient_duration": {
+                                "min": 0,
+                                "scale": 0,
+                                "max": 100,
+                                "step": 1
+                            },
+                            "bright": {
+                                "min": 0,
+                                "scale": 0,
+                                "max": 1000,
+                                "step": 1
+                            },
+                            "temperature": {
+                                "min": 0,
+                                "scale": 0,
+                                "max": 1000,
+                                "step": 1
+                            },
+                            "h": {
+                                "min": 0,
+                                "scale": 0,
+                                "unit": "",
+                                "max": 360,
+                                "step": 1
+                            },
+                            "s": {
+                                "min": 0,
+                                "scale": 0,
+                                "unit": "",
+                                "max": 1000,
+                                "step": 1
+                            },
+                            "v": {
+                                "min": 0,
+                                "scale": 0,
+                                "unit": "",
+                                "max": 1000,
+                                "step": 1
+                            }
+                        }
+                    }
+                },
+                "26": {
+                    "code": "countdown_1",
+                    "type": "Integer",
+                    "values": {
+                        "unit": "s",
+                        "min": 0,
+                        "max": 86400,
+                        "scale": 0,
+                        "step": 1
+                    }
+                },
+                "27": {
+                    "code": "music_data",
+                    "type": "Json",
+                    "raw_values": "{\"change_mode\":{\"range\":[\"direct\",\"gradient\"]}, \"bright\":{\"min\":0,\"scale\":0,\"unit\":\"\",\"max\":1000,\"step\":1}, \"temperature\":{\"min\":0,\"scale\":0,\"unit\":\"\",\"max\":1000,\"step\":1}, \"h\":{\"min\":0,\"scale\":0,\"unit\":\"\",\"max\":360,\"step\":1},\"s\":{\"min\":0,\"scale\":0,\"unit\":\"\",\"max\":255,\"step\":1},\"v\":{\"min\":0,\"scale\":0,\"unit\":\"\",\"max\":255,\"step\":1}}",
+                    "values": {
+                        "change_mode": {
+                            "range": [
+                                "direct",
+                                "gradient"
+                            ]
+                        },
+                        "bright": {
+                            "min": 0,
+                            "scale": 0,
+                            "unit": "",
+                            "max": 1000,
+                            "step": 1
+                        },
+                        "temperature": {
+                            "min": 0,
+                            "scale": 0,
+                            "unit": "",
+                            "max": 1000,
+                            "step": 1
+                        },
+                        "h": {
+                            "min": 0,
+                            "scale": 0,
+                            "unit": "",
+                            "max": 360,
+                            "step": 1
+                        },
+                        "s": {
+                            "min": 0,
+                            "scale": 0,
+                            "unit": "",
+                            "max": 255,
+                            "step": 1
+                        },
+                        "v": {
+                            "min": 0,
+                            "scale": 0,
+                            "unit": "",
+                            "max": 255,
+                            "step": 1
+                        }
+                    }
+                },
+                "28": {
+                    "code": "control_data",
+                    "type": "Json",
+                    "raw_values": "{\"change_mode\":{\"range\":[\"direct\",\"gradient\"]}, \"bright\":{\"min\":0,\"scale\":0,\"unit\":\"\",\"max\":1000,\"step\":1}, \"temperature\":{\"min\":0,\"scale\":0,\"unit\":\"\",\"max\":1000,\"step\":1}, \"h\":{\"min\":0,\"scale\":0,\"unit\":\"\",\"max\":360,\"step\":1},\"s\":{\"min\":0,\"scale\":0,\"unit\":\"\",\"max\":255,\"step\":1},\"v\":{\"min\":0,\"scale\":0,\"unit\":\"\",\"max\":255,\"step\":1}}",
+                    "values": {
+                        "change_mode": {
+                            "range": [
+                                "direct",
+                                "gradient"
+                            ]
+                        },
+                        "bright": {
+                            "min": 0,
+                            "scale": 0,
+                            "unit": "",
+                            "max": 1000,
+                            "step": 1
+                        },
+                        "temperature": {
+                            "min": 0,
+                            "scale": 0,
+                            "unit": "",
+                            "max": 1000,
+                            "step": 1
+                        },
+                        "h": {
+                            "min": 0,
+                            "scale": 0,
+                            "unit": "",
+                            "max": 360,
+                            "step": 1
+                        },
+                        "s": {
+                            "min": 0,
+                            "scale": 0,
+                            "unit": "",
+                            "max": 255,
+                            "step": 1
+                        },
+                        "v": {
+                            "min": 0,
+                            "scale": 0,
+                            "unit": "",
+                            "max": 255,
+                            "step": 1
+                        }
+                    }
+                },
+                "30": {
+                    "code": "rhythm_mode",
+                    "type": "Raw",
+                    "values": {
+                        "maxlen": "255"
+                    }
+                },
+                "31": {
+                    "code": "sleep_mode",
+                    "type": "Raw",
+                    "values": {
+                        "maxlen": "255"
+                    }
+                },
+                "32": {
+                    "code": "wakeup_mode",
+                    "type": "Raw",
+                    "values": {
+                        "maxlen": "255"
+                    }
+                },
+                "33": {
+                    "code": "power_memory",
+                    "type": "Raw",
+                    "values": {}
+                },
+                "34": {
+                    "code": "do_not_disturb",
+                    "type": "Boolean",
+                    "values": {}
+                },
+                "41": {
+                    "code": "remote_switch",
+                    "type": "Boolean",
+                    "values": {}
+                },
+                "209": {
+                    "code": "cycle_timing",
+                    "type": "Raw",
+                    "values": {}
+                },
+                "210": {
+                    "code": "random_timing",
+                    "type": "Raw",
+                    "values": {}
+                }
+            }
+        },
+        {
+            "active_time": 1763058710,
+            "biz_type": 18,
+            "category": "dlq",
+            "create_time": 1763058710,
+            "icon": "smart/icon/bay1626428014043QkLC/e6eab774bdef044b6c63880fbf814214.png",
+            "id": "id here",
+            "ip": "ip here",
+            "lat": "-22.43",
+            "local_key": "key here",
+            "lon": "-45.5",
+            "model": "",
+            "name": "Breaker",
+            "online": true,
+            "owner_id": "222540427",
+            "product_id": "u0cxoxtfelys3ufx",
+            "product_name": "Breaker",
+            "status": [
+                {
+                    "code": "total_forward_energy",
+                    "value": 2110
+                },
+                {
+                    "code": "phase_a",
+                    "value": "CNYAAaQAAAI="
+                },
+                {
+                    "code": "fault",
+                    "value": 0
+                },
+                {
+                    "code": "switch_prepayment",
+                    "value": false
+                },
+                {
+                    "code": "energy_reset",
+                    "value": ""
+                },
+                {
+                    "code": "balance_energy",
+                    "value": 0
+                },
+                {
+                    "code": "charge_energy",
+                    "value": 0
+                },
+                {
+                    "code": "leakage_current",
+                    "value": 0
+                },
+                {
+                    "code": "switch",
+                    "value": true
+                },
+                {
+                    "code": "alarm_set_1",
+                    "value": "BAEAHg=="
+                },
+                {
+                    "code": "alarm_set_2",
+                    "value": "AQEAKAMBAQ4EAQCq"
+                },
+                {
+                    "code": "breaker_number",
+                    "value": "1234"
+                },
+                {
+                    "code": "leakagecurr_test",
+                    "value": false
+                },
+                {
+                    "code": "supply_frequency",
+                    "value": 600
+                }
+            ],
+            "sub": false,
+            "time_zone": "-03:00",
+            "uid": "az1732387940725vAmNN",
+            "update_time": 1764792795,
+            "uuid": "1355e4709ab20f30",
+            "mapping": {
+                "1": {
+                    "code": "total_forward_energy",
+                    "type": "Integer",
+                    "values": {
+                        "unit": "kW\u00b7h",
+                        "min": 0,
+                        "max": 99999999,
+                        "scale": 2,
+                        "step": 1
+                    }
+                },
+                "6": {
+                    "code": "phase_a",
+                    "type": "Raw",
+                    "values": {}
+                },
+                "9": {
+                    "code": "fault",
+                    "type": "Bitmap",
+                    "values": {
+                        "label": [
+                            "short_circuit_alarm",
+                            "surge_alarm",
+                            "overload_alarm",
+                            "leakagecurr_alarm",
+                            "temp_dif_fault",
+                            "fire_alarm",
+                            "high_power_alarm",
+                            "self_test_alarm",
+                            "ov_cr",
+                            "unbalance_alarm",
+                            "ov_vol",
+                            "undervoltage_alarm",
+                            "miss_phase_alarm",
+                            "outage_alarm",
+                            "magnetism_alarm",
+                            "credit_alarm",
+                            "no_balance_alarm"
+                        ]
+                    }
+                },
+                "11": {
+                    "code": "switch_prepayment",
+                    "type": "Boolean",
+                    "values": {}
+                },
+                "12": {
+                    "code": "energy_reset",
+                    "type": "Enum",
+                    "values": {
+                        "range": [
+                            "empty"
+                        ]
+                    }
+                },
+                "13": {
+                    "code": "balance_energy",
+                    "type": "Integer",
+                    "values": {
+                        "unit": "kW\u00b7h",
+                        "min": 0,
+                        "max": 999999,
+                        "scale": 1,
+                        "step": 1
+                    }
+                },
+                "14": {
+                    "code": "charge_energy",
+                    "type": "Integer",
+                    "values": {
+                        "unit": "kW\u00b7h",
+                        "min": 0,
+                        "max": 99999,
+                        "scale": 1,
+                        "step": 1
+                    }
+                },
+                "15": {
+                    "code": "leakage_current",
+                    "type": "Integer",
+                    "values": {
+                        "unit": "mA",
+                        "min": 0,
+                        "max": 1000,
+                        "scale": 0,
+                        "step": 1
+                    }
+                },
+                "16": {
+                    "code": "switch",
+                    "type": "Boolean",
+                    "values": {}
+                },
+                "17": {
+                    "code": "alarm_set_1",
+                    "type": "Raw",
+                    "values": {}
+                },
+                "18": {
+                    "code": "alarm_set_2",
+                    "type": "Raw",
+                    "values": {}
+                },
+                "19": {
+                    "code": "breaker_number",
+                    "type": "String",
+                    "values": "{\"maxlen\":255}"
+                },
+                "21": {
+                    "code": "leakagecurr_test",
+                    "type": "Boolean",
+                    "values": {}
+                },
+                "105": {
+                    "code": "supply_frequency",
+                    "type": "Integer",
+                    "values": {
+                        "unit": "Hz",
+                        "min": 0,
+                        "max": 1000,
+                        "scale": 1,
+                        "step": 1
+                    }
+                }
+            }
+        },
+        {
+            "active_time": 1758721702,
+            "biz_type": 18,
+            "category": "kt",
+            "create_time": 1758721172,
+            "icon": "smart/icon/ay1523350366403gqJQv/9308f9846e2e56267b4f9fe2196556b2.png",
+            "id": "id here",
+            "ip": "ip here",
+            "lat": "-22.43",
+            "local_key": "key here",
+            "lon": "-45.5",
+            "model": "Wi-Fi",
+            "name": "Smart air conditioner",
+            "online": true,
+            "owner_id": "222540427",
+            "product_id": "gncaqbnuk4cj2etp",
+            "product_name": "Smart air conditioner",
+            "status": [
+                {
+                    "code": "switch",
+                    "value": true
+                },
+                {
+                    "code": "temp_set",
+                    "value": 250
+                },
+                {
+                    "code": "temp_current",
+                    "value": 250
+                },
+                {
+                    "code": "mode",
+                    "value": "cold"
+                },
+                {
+                    "code": "mode_eco",
+                    "value": true
+                },
+                {
+                    "code": "heat",
+                    "value": false
+                },
+                {
+                    "code": "light",
+                    "value": true
+                },
+                {
+                    "code": "lock",
+                    "value": false
+                },
+                {
+                    "code": "power_consumption",
+                    "value": 0
+                },
+                {
+                    "code": "switch_horizontal",
+                    "value": false
+                },
+                {
+                    "code": "sleep",
+                    "value": false
+                },
+                {
+                    "code": "health",
+                    "value": false
+                }
+            ],
+            "sub": false,
+            "time_zone": "-03:00",
+            "uid": "az1732387940725vAmNN",
+            "update_time": 1764791954,
+            "uuid": "9ab4def49e1151f1",
+            "mapping": {
+                "1": {
+                    "code": "switch",
+                    "type": "Boolean",
+                    "values": {}
+                },
+                "2": {
+                    "code": "temp_set",
+                    "type": "Integer",
+                    "values": {
+                        "unit": "\u00b0C/F",
+                        "min": 160,
+                        "max": 900,
+                        "scale": 1,
+                        "step": 10
+                    }
+                },
+                "3": {
+                    "code": "temp_current",
+                    "type": "Integer",
+                    "values": {
+                        "unit": "\u00b0C/F",
+                        "min": -300,
+                        "max": 1760,
+                        "scale": 1,
+                        "step": 10
+                    }
+                },
+                "4": {
+                    "code": "mode",
+                    "type": "Enum",
+                    "values": {
+                        "range": [
+                            "cold",
+                            "hot",
+                            "wet",
+                            "wind",
+                            "auto"
+                        ]
+                    }
+                },
+                "8": {
+                    "code": "mode_eco",
+                    "type": "Boolean",
+                    "values": {}
+                },
+                "12": {
+                    "code": "heat",
+                    "type": "Boolean",
+                    "values": {}
+                },
+                "13": {
+                    "code": "light",
+                    "type": "Boolean",
+                    "values": {}
+                },
+                "14": {
+                    "code": "lock",
+                    "type": "Boolean",
+                    "values": {}
+                },
+                "28": {
+                    "code": "power_consumption",
+                    "type": "Integer",
+                    "values": {
+                        "unit": "kW\u00b7h",
+                        "min": 0,
+                        "max": 255,
+                        "scale": 0,
+                        "step": 1
+                    }
+                },
+                "33": {
+                    "code": "switch_horizontal",
+                    "type": "Boolean",
+                    "values": {}
+                },
+                "102": {
+                    "code": "sleep",
+                    "type": "Boolean",
+                    "values": {}
+                },
+                "106": {
+                    "code": "health",
+                    "type": "Boolean",
+                    "values": {}
+                }
+            }
+        },
+        {
+            "active_time": 1744952619,
+            "biz_type": 18,
+            "category": "fskg",
+            "create_time": 1732388046,
+            "icon": "smart/icon/bay1704782771509l9jE/3d656c9d3c34cc25c3c99f9cf964f4dd.png",
+            "id": "id here",
+            "ip": "ip here",
+            "lat": "-22.43",
+            "local_key": "key here",
+            "lon": "-45.5",
+            "model": "WKMB-FSD02-BRA",
+            "name": "interruptor do ventilador com l\u00e2mpada",
+            "online": true,
+            "owner_id": "222540427",
+            "product_id": "7fifeztpdil6baw5",
+            "product_name": "interruptor do ventilador com l\u00e2mpada",
+            "status": [
+                {
+                    "code": "switch_fan",
+                    "value": false
+                },
+                {
+                    "code": "countdown_fan",
+                    "value": 0
+                },
+                {
+                    "code": "fan_speed_enum",
+                    "value": "level_1"
+                },
+                {
+                    "code": "relay_status",
+                    "value": "on"
+                },
+                {
+                    "code": "backlight_switch",
+                    "value": true
+                }
+            ],
+            "sub": false,
+            "time_zone": "-03:00",
+            "uid": "az1732387940725vAmNN",
+            "update_time": 1764791932,
+            "uuid": "38e2ed55e6ee2bf0",
+            "mapping": {
+                "1": {
+                    "code": "switch_fan",
+                    "type": "Boolean",
+                    "values": {}
+                },
+                "2": {
+                    "code": "countdown_fan",
+                    "type": "Integer",
+                    "values": {
+                        "unit": "s",
+                        "min": 0,
+                        "max": 86400,
+                        "scale": 0,
+                        "step": 1
+                    }
+                },
+                "3": {
+                    "code": "fan_speed_enum",
+                    "type": "Enum",
+                    "values": {
+                        "range": [
+                            "level_1",
+                            "level_2",
+                            "level_3",
+                            "level_4",
+                            "level_5"
+                        ]
+                    }
+                },
+                "11": {
+                    "code": "relay_status",
+                    "type": "Enum",
+                    "values": {
+                        "range": [
+                            "off",
+                            "on",
+                            "memory"
+                        ]
+                    }
+                },
+                "13": {
+                    "code": "backlight_switch",
+                    "type": "Boolean",
+                    "values": {}
+                }
+            }
+        },
+        {
+            "active_time": 1745425949,
+            "biz_type": 18,
+            "category": "dj",
+            "create_time": 1732388050,
+            "icon": "smart/program_category_icon/dj.png",
+            "id": "id here",
+            "ip": "ip here",
+            "lat": "",
+            "local_key": "key here",
+            "lon": "",
+            "model": "L\u00e2mpada Inteligente Zinnia Crux CR90",
+            "name": "L\u00e2mpada Inteligente Crux CR90 4",
+            "online": false,
+            "owner_id": "222540427",
+            "product_id": "1kbi4nnj",
+            "product_name": "L\u00e2mpada Inteligente Crux CR90",
+            "sub": false,
+            "time_zone": "-03:00",
+            "uid": "az1732387940725vAmNN",
+            "update_time": 1745425949,
+            "uuid": "7e538cf4d49b5326",
+            "mapping": {
+                "1": {
+                    "code": "switch_led",
+                    "type": "Boolean",
+                    "values": {}
+                },
+                "2": {
+                    "code": "work_mode",
+                    "type": "Enum",
+                    "values": {
+                        "range": [
+                            "white",
+                            "colour",
+                            "scene",
+                            "music"
+                        ]
+                    }
+                },
+                "3": {
+                    "code": "bright_value_v2",
+                    "type": "Integer",
+                    "values": {
+                        "min": 10,
+                        "max": 1000,
+                        "scale": 0,
+                        "step": 1
+                    }
+                },
+                "4": {
+                    "code": "temp_value_v2",
+                    "type": "Integer",
+                    "values": {
+                        "min": 0,
+                        "max": 1000,
+                        "scale": 0,
+                        "step": 1
+                    }
+                },
+                "7": {
+                    "code": "countdown_1",
+                    "type": "Integer",
+                    "values": {
+                        "unit": "s",
+                        "min": 0,
+                        "max": 86400,
+                        "scale": 0,
+                        "step": 1
+                    }
+                }
+            }
+        }
+    ],
+    "success": true,
+    "t": 1765056860601,
+    "tid": "5345db30d2eb11f0a209ea7c08cf018d",
+    "file": {
+        "name": "tuya-raw.json",
+        "description": "Full raw list of Tuya devices.",
+        "account": "twwhfj38ek5rtnnhvca8",
+        "date": "2025-12-06T18:34:26.549383",
+        "tinytuya": "1.17.4"
+    }
+}
