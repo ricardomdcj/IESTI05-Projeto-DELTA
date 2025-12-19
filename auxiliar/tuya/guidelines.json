@@ -1,0 +1,350 @@
+{
+  "api_version": "1.0",
+  "description": "TinyTuya Local Control API - Dispositivos domésticos inteligentes",
+  "base_command": "python controle.py <device> mmand> <value>",
+  
+  "devices": {
+    "interruptor": {
+      "id": "id here",
+      "description": "Controla ventilador de teto e lâmpada independentemente",
+      "ip": "ip here",
+      "version": "3.4",
+      "commands": {
+        "ventilador": {
+          "dps": "1",
+          "description": "Liga ou desliga o motor do ventilador",
+          "type": "boolean",
+          "valid_values": ["on", "off", "ligar", "desligar", "true", "false", "1", "0"],
+          "examples": [
+            "python controle.py interruptor ventilador on",
+            "python controle.py interruptor ventilador off"
+          ]
+        },
+        "speed": {
+          "dps": "3",
+          "description": "Ajusta velocidade do ventilador (5 níveis)",
+          "type": "enum",
+          "valid_values": ["1", "2", "3", "4", "5", "baixo", "low", "medio_baixo", "medio", "middle", "medio_alto", "alto", "high", "level_1", "level_2", "level_3", "level_4", "level_5"],
+          "mapping": {
+            "1": "level_1",
+            "2": "level_2",
+            "3": "level_3",
+            "4": "level_4",
+            "5": "level_5",
+            "baixo": "level_1",
+            "low": "level_1",
+            "medio": "level_3",
+            "middle": "level_3",
+            "alto": "level_5",
+            "high": "level_5"
+          },
+          "examples": [
+            "python controle.py interruptor speed 3",
+            "python controle.py interruptor speed alto"
+          ]
+        },
+        "lamp": {
+          "dps": "5",
+          "description": "Liga ou desliga a lâmpada do ventilador (luminária de teto)",
+          "type": "boolean",
+          "valid_values": ["on", "off", "ligar", "desligar", "true", "false", "1", "0"],
+          "examples": [
+            "python controle.py interruptor lamp on",
+            "python controle.py interruptor lamp off"
+          ]
+        }
+      }
+    },
+    
+    "ar": {
+      "id": "id here",
+      "description": "Ar-condicionado split inteligente",
+      "ip": "ip here",
+      "version": "3.3",
+      "commands": {
+        "switch": {
+          "dps": "1",
+          "description": "Liga ou desliga o ar-condicionado",
+          "type": "boolean",
+          "valid_values": ["on", "off", "ligar", "desligar", "true", "false", "1", "0"],
+          "examples": ["python controle.py ar switch on"]
+        },
+        "temp": {
+          "dps": "2",
+          "description": "Define temperatura desejada em graus Celsius",
+          "type": "integer",
+          "range": {"min": 16, "max": 30},
+          "unit": "°C",
+          "note": "Valor é multiplicado por 10 no protocolo (ex: 24°C = 240)",
+          "examples": [
+            "python controle.py ar temp 24",
+            "python controle.py ar temp 18"
+          ]
+        },
+        "mode": {
+          "dps": "4",
+          "description": "Define modo de operação do ar-condicionado",
+          "type": "enum",
+          "valid_values": ["cold", "wet", "wind", "auto", "frio", "cool", "seco", "dry", "ventilar", "fan", "automatico"],
+          "mapping": {
+            "cold": "cold",
+            "frio": "cold",
+            "cool": "cold",
+            "wet": "wet",
+            "seco": "wet",
+            "dry": "wet",
+            "wind": "wind",
+            "ventilar": "wind",
+            "fan": "wind",
+            "auto": "auto",
+            "automatico": "auto"
+          },
+          "examples": [
+            "python controle.py ar mode cold",
+            "python controle.py ar mode auto"
+          ]
+        },
+        "wind": {
+          "dps": "5",
+          "description": "Ajusta velocidade do ventilador interno",
+          "type": "enum",
+          "valid_values": ["auto", "mute", "low", "mid", "high", "off", "automatico", "silencioso", "quieto", "baixo", "medio", "alto", "turbo", "maximo", "0", "1", "2", "3", "4"],
+          "mapping": {
+            "auto": "auto",
+            "mute": "mute",
+            "off": "mute",
+            "low": "low",
+            "mid": "mid",
+            "high": "high",
+            "turbo": "high",
+            "0": "mute",
+            "1": "low",
+            "2": "mid",
+            "3": "high",
+            "4": "high"
+          },
+          "note": "O valor 'off' é mapeado para 'mute' (modo silencioso). O modo 'turbo' é equivalente a 'high' no protocolo local.",
+          "examples": [
+            "python controle.py ar wind high",
+            "python controle.py ar wind off"
+          ]
+        },
+        "eco": {
+          "dps": "8",
+          "description": "Ativa ou desativa modo econômico (economia de energia)",
+          "type": "boolean",
+          "valid_values": ["on", "off"],
+          "examples": ["python controle.py ar eco on"]
+        },
+        "light": {
+          "dps": "13",
+          "description": "Liga ou desliga a iluminação do display",
+          "type": "boolean",
+          "valid_values": ["on", "off"],
+          "examples": ["python controle.py ar light off"]
+        },
+        "lock": {
+          "dps": "14",
+          "description": "Trava ou destrava controles físicos (child lock)",
+          "type": "boolean",
+          "valid_values": ["on", "off"],
+          "examples": ["python controle.py ar lock on"]
+        },
+        "unit": {
+          "dps": "19",
+          "description": "Define unidade de temperatura (Celsius ou Fahrenheit)",
+          "type": "enum",
+          "valid_values": ["c", "celsius", "f", "fahrenheit"],
+          "mapping": {
+            "c": "C",
+            "celsius": "C",
+            "f": "F",
+            "fahrenheit": "F"
+          },
+          "examples": ["python controle.py ar unit c"]
+        },
+        "swing": {
+          "dps": "33",
+          "description": "Ativa ou desativa oscilação das aletas",
+          "type": "boolean",
+          "valid_values": ["on", "off"],
+          "examples": ["python controle.py ar swing on"]
+        },
+        "sleep": {
+          "dps": "102",
+          "description": "Ativa ou desativa modo sleep (noturno)",
+          "type": "boolean",
+          "valid_values": ["on", "off"],
+          "examples": ["python controle.py ar sleep on"]
+        },
+        "health": {
+          "dps": "106",
+          "description": "Ativa ou desativa modo health (filtro/ionizador)",
+          "type": "boolean",
+          "valid_values": ["on", "off"],
+          "examples": ["python controle.py ar health on"]
+        }
+      }
+    },
+    
+    "lampada": {
+      "id": "id here",
+      "description": "Lâmpada inteligente RGB com temperatura de cor ajustável",
+      "ip": "ip here",
+      "version": "3.5",
+      "note": "O switch on/off da lâmpada (DPS 20) não é controlado por esta API. Use 'interruptor lamp on/off' para ligar/desligar a alimentação da lâmpada.",
+      "commands": {
+        "modo": {
+          "dps": "multi",
+          "description": "Define modo pré-configurado de iluminação",
+          "type": "preset",
+          "valid_values": ["dia", "day", "branco", "white", "noite", "night", "amarelo", "laranja", "warm"],
+          "presets": {
+            "dia": {
+              "description": "Luz branca fria em brilho máximo (ideal para trabalho/leitura)",
+              "dps_values": {
+                "21": "white",
+                "22": 1000,
+                "23": 1000
+              },
+              "parameters": {
+                "work_mode": "white",
+                "brightness": "100%",
+                "temperature": "6500K (frio/branco)"
+              }
+            },
+            "noite": {
+              "description": "Luz amarela/laranja em brilho médio (ideal para relaxamento)",
+              "dps_values": {
+                "21": "white",
+                "22": 450,
+                "23": 100
+              },
+              "parameters": {
+                "work_mode": "white",
+                "brightness": "45%",
+                "temperature": "2700K (quente/amarelo)"
+              }
+            }
+          },
+          "examples": [
+            "python controle.py lampada modo dia",
+            "python controle.py lampada modo noite"
+          ]
+        },
+        "brilho": {
+          "dps": "22",
+          "description": "Ajusta intensidade luminosa da lâmpada",
+          "type": "integer",
+          "range": {"min": 10, "max": 1000},
+          "alternative_range": {"min": 1, "max": 100, "note": "Valores 1-100 são interpretados como percentuais e multiplicados por 10"},
+          "unit": "escala 10-1000 ou percentual 1-100%",
+          "examples": [
+            "python controle.py lampada brilho 500",
+            "python controle.py lampada brilho 60"
+          ]
+        },
+        "temp": {
+          "dps": "23",
+          "description": "Ajusta temperatura de cor (tonalidade branco-amarelo)",
+          "type": "integer_or_enum",
+          "range": {"min": 0, "max": 1000},
+          "scale": "0=amarelo quente (2700K), 1000=branco frio (6500K)",
+          "valid_enum_values": ["quente", "warm", "amarelo", "frio", "cold", "branco"],
+          "mapping": {
+            "quente": 0,
+            "warm": 0,
+            "amarelo": 0,
+            "frio": 1000,
+            "cold": 1000,
+            "branco": 1000
+          },
+          "examples": [
+            "python controle.py lampada temp quente",
+            "python controle.py lampada temp 500",
+            "python controle.py lampada temp frio"
+          ]
+        }
+      }
+    }
+  },
+  
+  "status_command": {
+    "description": "Consulta estado atual de qualquer dispositivo",
+    "syntax": "python controle.py <device> status",
+    "examples": [
+      "python controle.py interruptor status",
+      "python controle.py ar status",
+      "python controle.py lampada status"
+    ],
+    "output_format": "Lista de DPS (Data Points) com valores atuais"
+  },
+  
+  "function_calling_guidelines": {
+    "intent_mapping": {
+      "ligar": "Use valor 'on'",
+      "desligar": "Use valor 'off'",
+      "aumentar": "Incremente valor atual se conhecido, ou use valor alto",
+      "diminuir": "Decremente valor atual se conhecido, ou use valor baixo",
+      "esfriar": "ar mode cold + temperatura baixa (18-20)",
+      "esquentar": "ar mode cold + temperatura alta (26-28)",
+      "ventilar": "ar mode wind",
+      "silencioso": "ar wind mute ou ar wind off",
+      "potente": "ar wind high ou interruptor speed 5",
+      "economizar": "ar eco on",
+      "clarear": "lampada modo dia ou lampada brilho alto",
+      "escurecer": "lampada brilho baixo"
+    },
+    
+    "context_awareness": {
+      "room_context": {
+        "quarto": "Considere 'lampada modo noite' e 'ar sleep on' para horário noturno",
+        "sala": "Considere 'lampada modo dia' para iluminação adequada",
+        "trabalho": "Use 'lampada modo dia' para melhor visibilidade"
+      },
+      "time_context": {
+        "noite": "Prefira 'lampada modo noite', 'ar sleep on', temperaturas mais altas",
+        "dia": "Prefira 'lampada modo dia', temperaturas mais baixas",
+        "madrugada": "Use 'ar wind mute' para reduzir ruído"
+      },
+      "comfort_preferences": {
+        "frio": "ar temp 18-20",
+        "confortável": "ar temp 22-24",
+        "quente": "ar temp 26-28"
+      }
+    },
+    
+    "error_handling": {
+      "invalid_value": "Resposta contém 'Erro:' - verifique valores válidos na documentação",
+      "device_offline": "Se comando não executar, dispositivo pode estar offline",
+      "parameter_validation": "Sempre valide parâmetros antes de chamar função"
+    },
+    
+    "chaining_suggestions": {
+      "scenario_dormir": [
+        "python controle.py ar temp 24",
+        "python controle.py ar wind mute",
+        "python controle.py ar sleep on",
+        "python controle.py lampada modo noite",
+        "python controle.py interruptor ventilador off"
+      ],
+      "scenario_trabalhar": [
+        "python controle.py lampada modo dia",
+        "python controle.py ar temp 22",
+        "python controle.py ar wind low"
+      ],
+      "scenario_economizar": [
+        "python controle.py ar eco on",
+        "python controle.py ar temp 24",
+        "python controle.py lampada brilho 40"
+      ]
+    }
+  },
+  
+  "response_patterns": {
+    "success": "Comando concluído.",
+    "sending": "Enviando: DPS <id> -> <value>",
+    "info": "Mensagens iniciadas com 'Aviso:' ou terminadas com '.'",
+    "error": "Mensagens iniciadas com 'Erro:'"
+  }
+}
